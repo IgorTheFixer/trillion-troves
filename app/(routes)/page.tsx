@@ -8,9 +8,7 @@ export const revalidate = 0;
 
 const HomePage = async () => {
   const products = await getProducts({ isFeatured: true });
-  // TODO:refactor to make more dynamic
-  const billboard = await getBillboard(`179e1a71-193b-4f5f-aaae-07ffef632132`);
-
+  const billboard = await getBillboard(`83440471-92ad-4ec7-8520-bdf87d88a900`);
   return (
     <Container>
       <div className="space-y-10 pb-10">
